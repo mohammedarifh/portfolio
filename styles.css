@@ -49,7 +49,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: transparent; /* Start transparent */
-  padding: 20px;;
+  padding: 20px;
   z-index: 999;
   transition: background-color 0.3s;
 }
@@ -487,6 +487,11 @@ body {
 
 /* Prevent background scrolling when modal is open */
 body.modal-open {
+  overflow: hidden;
+}
+
+/* Prevent background scrolling when mobile nav is open */
+body.no-scroll {
   overflow: hidden;
 }
 
